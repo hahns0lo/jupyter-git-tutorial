@@ -24,6 +24,16 @@ To allow you to push and pull commits to and from this repo, you must create you
 1. In the upper right-hand corner, click `Fork`
 1. Select your user
 
+## Setup SSH key
+
+To allow you to push and pull commits without being prompted for a password, you must setup your GitHub account with an SSH key.  The following instructions describe how to do this in your JupyterLab instance.  More detailed instructions can be found
+
+1. Open JupyterLab
+1. Open a terminal from the JupyterLab launcher
+1. Create an SSH key by following the Linux instructions [here](https://docs.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
+1. Add the SSH key to your GitHub account the Linux instructions [here](https://docs.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account).
+   1. For step 1, use the following command instead: `cat ~/.ssh/id_ed25519.pub`
+
 ## Setup ReviewNB
 
 [ReviewNB](https://www.reviewnb.com/) is a GitHub Marketplace app that provides visual diffs for Jupyter notebooks on GitHub.  The following instructions describe how to setup ReviewNB with your fork.
