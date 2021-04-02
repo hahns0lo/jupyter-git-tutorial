@@ -1,7 +1,8 @@
 # jupyter-git-tutorial
+
 A tutorial for using Git with Jupyter notebooks
 
-# Setting up Jupyter
+## Setting up Jupyter
 
 This tutorial uses JupyterLab using Google Cloud Platform's [AI Platform Notebooks](https://cloud.google.com/ai-platform-notebooks).  The following instructions describe how to create a notebook instance.  More detailed instructions can be found [here](https://cloud.google.com/ai-platform/notebooks/docs/create-new).
 
@@ -13,7 +14,7 @@ This tutorial uses JupyterLab using Google Cloud Platform's [AI Platform Noteboo
    1. Instance properties: use all defaults
    1. Click `CREATE`
 
-# Forking this repo
+## Forking this repo
 
 To allow you to push and pull commits to and from this repo, you must create your own copy of it, known as creating a fork.  The following instructions describe how to fork this repo.  More detailed instructions can be found [here](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo).
 
