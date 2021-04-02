@@ -26,7 +26,6 @@ To allow you to push and pull commits to and from this repo, you must create you
 
 ## Scenario 1
 
-1. Open JupyterLab
 1. Clone your fork of this repo
    1. Using the Git extension
       1. On the left-hand side, click the [Git icon](https://git-scm.com/) to open the Git extension.
@@ -39,7 +38,7 @@ To allow you to push and pull commits to and from this repo, you must create you
    1. Using JupyterLab
       1. Open `jupyter-git-tutorial`
       1. Create a new folder called `tutorial`
-      1. Copy and paste `intro_to_pandas.ipynb` into `tutorial
+      1. Copy and paste `intro_to_pandas.ipynb` into `tutorial`
    1. Using the command line
       1. `cd jupyter-git-tutorial`
       1. `mkdir tutorial`
@@ -77,3 +76,58 @@ To allow you to push and pull commits to and from this repo, you must create you
          1. `git add .gitignore`
          1. `git commit -m "Ignoring checkpoints"`
          1. `git status`
+
+## Scenario 2
+
+1. Open `intro_to_pandas.ipynb` in the `jupyter-git-tutorial/tutorial` folder, run it, and save
+1. Check Git status
+   1. Using the Git extension
+      1. `intro_to_pandas.ipynb` should be listed under Changed
+   1. Using the command line
+      1. `cd ~/jupyter-git-tutorial`
+      1. `git status`
+      1. `tutorial/intro_to_pandas.ipynb` should be listed as `modified` under `Changes not staged for commit`
+1. Look at the changes
+   1. Using the Git extension
+      1. Under Changed, select `intro_to_pandas.ipynb` and click the icon with a `+` and `-`
+      1. Only outputs should have changed
+   1. Using the command line
+      1. `git diff`
+      1. Keep pressing space to scroll down or `q` to quit
+      1. `git difftool`
+      1. Use the up/down keys to scroll or the following sequence twice to quit
+         1. `:q`
+         1. Enter
+1. Stage the changes and view the changes again
+   1. Using the Git extension
+      1. Under Changed, select `intro_to_pandas.ipynb` and click `+`
+      1. Under Staged, select `intro_to_pandas.ipynb` and click the icon with a `+` and `-`
+   1. Using the command line
+      1. `git status`
+      1. `git add tutorial/intro_to_pandas.ipynb`
+      1. `git status`
+      1. `git diff` Nothing should happen!
+      1. `git diff --staged`
+      1. `git difftool --staged`
+1. Commit the changes
+   1. Using the Git extension
+      1. Summary: Ran notebook
+      1. Click `Commit`
+      1. Enter your name and email
+   1. Using the command line
+      1. `git commit -m "Ran notebook"`
+      1. `git status`
+1. Look at the log
+   1. Using the Git extension
+      1. Click the History tab
+   1. Using the command line
+      1. `git log`
+      1. `git log --pretty=format:"%h %an %ar - %s"`
+1. Look at the last commit
+   1. Using the Git extension
+      1. Click the History tab
+      1. Click on the "Ran notebook" commit to expand
+      1. Click on `intro_to_pandas.ipynb`
+   1. Using the command line
+      1. Copy the long string of numbers and text after `commit`. This is called the commit hash or commit SHA.
+      1. `git show [commit hash]`
