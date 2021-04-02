@@ -131,3 +131,40 @@ To allow you to push and pull commits to and from this repo, you must create you
    1. Using the command line
       1. Copy the long string of numbers and text after `commit`. This is called the commit hash or commit SHA.
       1. `git show [commit hash]`
+
+## Scenario 3
+
+1. Open `intro_to_pandas.ipynb` in the `jupyter-git-tutorial/tutorial` folder
+1. Modify the notebook
+   1. Find and replace the following
+      1. `Sacramento` to `Los Angeles`
+      1. `485199` to `3792621`
+      1. `97.92` to `468.97`
+   1. Run the notebook and save
+1. Look at the changes
+   1. Using the Git extension
+      1. Look at the output after the `pd.Series(['San Francisco', 'San Jose', 'Los Angeles'])` cell
+      1. Hover over the red/green boxes under "Outputs changed" and click `Show source`
+   1. Using the command line
+      1. `git diff`
+      1. `git difftool`
+   1. Note that may appear that all outputs have changed, even if you don't see any differences.  This is because if the cell numbers differ, that counts as a change.
+   1. Try Run->Restart Kernel and Run All Cells... to reset cell numbering and look at the diff again
+1. Stage and commit the changes
+   1. Summary: "Replaced Sacramento with Los Angeles"
+1. Look at information about the remote repository
+   1. The Git extension does not have this feature
+   1. Using the command line
+      1. `cd ~/jupyter-git-tutorial`
+      1. `git remote`
+      1. `git remote show origin`
+1. Open <https://github.com/[username]/jupyter-git-tutorial> in a browser
+   1. Click on the `N commits` link next to the icon of a watch.
+1. Push your commits
+   1. Using the Git extension
+      1. Click the cloud icon with an up arrow
+      1. Enter GitHub username and password
+   1. Using the command line
+      1. `git push`
+1. Open <https://github.com/[username]/jupyter-git-tutorial> in a browser
+   1. Click on the `N commits` link again.  The value of `N` should be larger and you should see the commits you just pushed.
