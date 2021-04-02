@@ -193,3 +193,9 @@ To allow you to push and pull commits without being prompted for a password, you
    1. Click on the `N commits` link again.  The value of `N` should be larger and it should match the log history.
 
 ### Bonus: ReviewNB
+
+1. Open <https://app.reviewnb.com/>
+1. Select `[username]/jupyter-git-tutorial`
+1. Select the Commits tab
+1. Select the "Replaced Sacramento with Los Angeles" commit
+1. Click `SEE ON GITHUB`
