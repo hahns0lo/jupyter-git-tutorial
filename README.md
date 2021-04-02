@@ -28,7 +28,7 @@ To allow you to push and pull commits to and from this repo, you must create you
 
 1. Open JupyterLab
 1. Clone your fork of this repo
-   1. Using the JupyterLab Git extension
+   1. Using the Git extension
       1. On the left-hand side, click the [Git icon](https://git-scm.com/) to open the Git extension.
       1. Click `Clone a Repository`
       1. Copy and paste the URL to your fork, e.g. <https://github.com/[username]/jupyter-git-tutorial>
@@ -40,12 +40,26 @@ To allow you to push and pull commits to and from this repo, you must create you
       1. Copy and paste `intro_to_pandas.ipynb` into `tutorial
    1. Using the command line
 1. Stage the notebook
-   1. Using JupyterLab
-      1. Open the Git extension
+   1. Using the Git extension
       1. Under Untracked, select `intro_to_pandas.ipynb` and click `+`
+   1. Using the command line
 1. Commit the notebook
-   1. Using JupyterLab
-      1. Open the Git extension
+   1. Using the Git extension
       1. Summary: Adding copy of notebook
       1. Click `Commit`
       1. Enter your name and email
+   1. Using the command line
+1. Ignore Jupyter checkpoints
+   1. Open `intro_to_pandas.ipynb`
+   1. Create a new text file in the `jupyter-git-tutorial` folder called `.gitignore` and add the following:
+
+      ```
+      .ipynb_checkpoints
+      ```
+
+   1. Stage and commit `.gitignore`
+      1. Using the Git extension
+         1. Under Untracked, select `.gitignore` and click `+`
+         1. Summary: Ignoring checkpoints
+         1. Click `Commit`
+      1. Using the command line
