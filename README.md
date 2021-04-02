@@ -20,7 +20,7 @@ This tutorial uses JupyterLab using Google Cloud Platform's [AI Platform Noteboo
 To allow you to push and pull commits to and from this repo, you must create your own copy of it, known as creating a fork.  The following instructions describe how to fork this repo.  More detailed instructions can be found [here](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo).
 
 1. [Create a GitHub account](https://github.com/join), if you don't have one
-1. Open https://github.com/hahns0lo/jupyter-git-tutorial in a browser
+1. Open <https://github.com/hahns0lo/jupyter-git-tutorial. in a browser
 1. In the upper right-hand corner, click `Fork`
 1. Select your user
 
@@ -33,6 +33,16 @@ To allow you to push and pull commits without being prompted for a password, you
 1. Create an SSH key by following the Linux instructions [here](https://docs.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
 1. Add the SSH key to your GitHub account the Linux instructions [here](https://docs.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account).
    1. For step 1, use the following command instead: `cat ~/.ssh/id_ed25519.pub`
+
+## Setup ReviewNB
+
+[ReviewNB](https://www.reviewnb.com/) is a GitHub Marketplace app that provides visual diffs for Jupyter notebooks on GitHub.  The following instructions describe how to setup ReviewNB with your fork.
+
+1. Open <https://github.com/marketplace/review-notebook-app>
+1. Under Pricing and setup, select Free and click `Install it for free`
+1. Click `Complete order and begin installation`
+1. Select `Only select repositories`, select `[username]/jupyter-git-tutorial`, and click `Install`
+1. Click `Authorize Review Notebook App` and you will be redirected to <https://app.reviewnb.com/>
 
 ## Scenario 1
 
