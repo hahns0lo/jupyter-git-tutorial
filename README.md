@@ -37,7 +37,7 @@ To allow you to push and pull commits to and from this repo, you must create you
       1. `git clone https://github.com/[username]/jupyter-git-tutorial`
 1. Make a copy of the tutorial notebook
    1. Using JupyterLab
-      1. Open jupyter-git-tutorial
+      1. Open `jupyter-git-tutorial`
       1. Create a new folder called `tutorial`
       1. Copy and paste `intro_to_pandas.ipynb` into `tutorial
    1. Using the command line
