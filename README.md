@@ -159,12 +159,13 @@ To allow you to push and pull commits to and from this repo, you must create you
       1. `git remote`
       1. `git remote show origin`
 1. Open <https://github.com/[username]/jupyter-git-tutorial> in a browser
-   1. Click on the `N commits` link next to the icon of a watch.
+   1. Click on the `N commits` link next to the icon of a watch.  It should not contain any of your commits.
 1. Push your commits
    1. Using the Git extension
       1. Click the cloud icon with an up arrow
       1. Enter GitHub username and password
    1. Using the command line
       1. `git push`
+1. Look at the log
 1. Open <https://github.com/[username]/jupyter-git-tutorial> in a browser
-   1. Click on the `N commits` link again.  The value of `N` should be larger and you should see the commits you just pushed.
+   1. Click on the `N commits` link again.  The value of `N` should be larger and it should match the log history.
