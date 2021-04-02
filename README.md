@@ -1,6 +1,8 @@
 # jupyter-git-tutorial
 
-A tutorial for using Git with Jupyter notebooks
+The goal of this tutorial is to show how to use Git with Jupyter notebooks.  The primary audience for this tutorial are data scientists and data analysts who have some experience with Jupyter notebooks but little to no experience with Git or the command line.  To that end, this tutorial uses JupyterLab and the [JupyterLab Git extension](https://github.com/jupyterlab/jupyterlab-git) but also provides the equivalent `git` commands, for the curious.
+
+This tutorial is inspired by the [Katacoda Git tutorial](https://katacoda.com/courses/git/) in that it follows the same basic flow of introducing Git commands but applied to Jupyter notebooks.  The actual notebook used here is from this [Google Colab notebook](https://colab.research.google.com/notebooks/mlcc/intro_to_pandas.ipynb) for teaching the pandas Python library.
 
 ## Setting up Jupyter
 
@@ -189,3 +191,11 @@ To allow you to push and pull commits without being prompted for a password, you
 1. Look at the log
 1. Open <https://github.com/[username]/jupyter-git-tutorial> in a browser
    1. Click on the `N commits` link again.  The value of `N` should be larger and it should match the log history.
+
+### Bonus: ReviewNB
+
+1. Open <https://app.reviewnb.com/>
+1. Select `[username]/jupyter-git-tutorial`
+1. Select the Commits tab
+1. Select the "Replaced Sacramento with Los Angeles" commit
+1. Click `SEE ON GITHUB`
