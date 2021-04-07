@@ -10,7 +10,7 @@ This tutorial uses JupyterLab using Google Cloud Platform's [AI Platform Noteboo
 
 1. Open the [AI Platform Notebooks console](https://console.cloud.google.com/ai-platform/notebooks)
 1. Click `+NEW INSTANCE` and select "Python 3"
-   1. Instance name: git-tutorial-python
+   1. Instance name: git-tutorial-python-[YOUR NAME]
    1. Region: us-east1 (South Carolina)
    1. Zone: us-east1-b
    1. Instance properties: use all defaults
