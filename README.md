@@ -50,12 +50,14 @@ To allow you to push and pull commits without being prompted for a password, you
 
 1. Clone your fork of this repo
    1. Using the Git extension
-      1. On the left-hand side, click the [Git icon](https://git-scm.com/) to open the Git extension.
+      1. Get the URI to your fork. In your browser, click `Code`, select "HTTPS", and copy the URI.
+      1. On the left-hand side of JupyterLab, click the [Git icon](https://git-scm.com/) to open the Git extension.
       1. Click `Clone a Repository`
-      1. Copy and paste the URL to your fork, e.g. <https://github.com/[username]/jupyter-git-tutorial>
+      1. Paste the URI to your fork, e.g. <https://github.com/[username]/jupyter-git-tutorial>
    1. Using the command line
+      1. Get the URI to your fork. In your browser, click `Code`, select "SSH", and copy the URI.
       1. Open a terminal from the JupyterLab launcher
-      1. `git clone https://github.com/[username]/jupyter-git-tutorial`
+      1. `git clone git@github.com:hahns0lo/jupyter-git-tutorial.git`
 1. Make a copy of the tutorial notebook
    1. Using JupyterLab
       1. Open `jupyter-git-tutorial`
