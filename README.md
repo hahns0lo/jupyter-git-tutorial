@@ -22,7 +22,7 @@ This tutorial uses JupyterLab using Google Cloud Platform's [AI Platform Noteboo
 To allow you to push and pull commits to and from this repo, you must create your own copy of it, known as creating a fork.  The following instructions describe how to fork this repo.  More detailed instructions can be found [here](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo).
 
 1. [Create a GitHub account](https://github.com/join), if you don't have one
-1. Open <https://github.com/hahns0lo/jupyter-git-tutorial. in a browser
+1. Open <https://github.com/hahns0lo/jupyter-git-tutorial>. in a browser
 1. In the upper right-hand corner, click `Fork`
 1. Select your user
 
