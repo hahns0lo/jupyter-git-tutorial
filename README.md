@@ -10,7 +10,7 @@ This tutorial uses JupyterLab using Google Cloud Platform's [AI Platform Noteboo
 
 1. Open the [AI Platform Notebooks console](https://console.cloud.google.com/ai-platform/notebooks)
 1. Click `+NEW INSTANCE` and select "Python 3"
-   1. Instance name: git-tutorial-python
+   1. Instance name: git-tutorial-python-[YOUR NAME]
    1. Region: us-east1 (South Carolina)
    1. Zone: us-east1-b
    1. Instance properties: use all defaults
@@ -22,7 +22,7 @@ This tutorial uses JupyterLab using Google Cloud Platform's [AI Platform Noteboo
 To allow you to push and pull commits to and from this repo, you must create your own copy of it, known as creating a fork.  The following instructions describe how to fork this repo.  More detailed instructions can be found [here](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo).
 
 1. [Create a GitHub account](https://github.com/join), if you don't have one
-1. Open <https://github.com/hahns0lo/jupyter-git-tutorial. in a browser
+1. Open <https://github.com/hahns0lo/jupyter-git-tutorial> in a browser
 1. In the upper right-hand corner, click `Fork`
 1. Select your user
 
@@ -50,12 +50,14 @@ To allow you to push and pull commits without being prompted for a password, you
 
 1. Clone your fork of this repo
    1. Using the Git extension
-      1. On the left-hand side, click the [Git icon](https://git-scm.com/) to open the Git extension.
+      1. Get the URI to your fork. In your browser, click `Code`, select "HTTPS", and copy the URI.
+      1. On the left-hand side of JupyterLab, click the [Git icon](https://git-scm.com/) to open the Git extension.
       1. Click `Clone a Repository`
-      1. Copy and paste the URL to your fork, e.g. <https://github.com/[username]/jupyter-git-tutorial>
+      1. Paste the URI to your fork, e.g. <https://github.com/[username]/jupyter-git-tutorial>
    1. Using the command line
+      1. Get the URI to your fork. In your browser, click `Code`, select "SSH", and copy the URI.
       1. Open a terminal from the JupyterLab launcher
-      1. `git clone https://github.com/[username]/jupyter-git-tutorial`
+      1. `git clone git@github.com:[username]/jupyter-git-tutorial.git`
 1. Make a copy of the tutorial notebook
    1. Using JupyterLab
       1. Open `jupyter-git-tutorial`
