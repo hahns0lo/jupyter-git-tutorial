@@ -80,6 +80,8 @@ To allow you to push and pull commits without being prompted for a password, you
       1. Click `Commit`
       1. Enter your name and email
    1. Using the command line
+      1. Set your email address: `git config --global user.email "you@example.com"`
+      1. Set your name: `git config --global user.name "Your Name"`
       1. `git commit -m "Adding copy of notebook"`
       1. `git status`
 1. Ignore Jupyter checkpoints
