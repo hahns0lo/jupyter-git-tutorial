@@ -6,6 +6,8 @@ This tutorial is inspired by the [Katacoda Git tutorial](https://katacoda.com/co
 
 ## Setting up Jupyter
 
+## Google Cloud AI Platform Notebooks
+
 This tutorial uses JupyterLab using Google Cloud Platform's [AI Platform Notebooks](https://cloud.google.com/ai-platform-notebooks).  The following instructions describe how to create a notebook instance.  More detailed instructions can be found [here](https://cloud.google.com/ai-platform/notebooks/docs/create-new).
 
 1. Open the [AI Platform Notebooks console](https://console.cloud.google.com/ai-platform/notebooks)
@@ -16,6 +18,17 @@ This tutorial uses JupyterLab using Google Cloud Platform's [AI Platform Noteboo
    1. Instance properties: use all defaults
    1. Click `CREATE`
 1. Click `OPEN JUPYTERLAB`
+
+## Local Installation
+
+This section assumes you already have Python installed.  Note that this section has only been tested on macOS, so far.
+
+1. (Optional, but recommended) Create a virtual environment.  There are [many options](https://stackoverflow.com/questions/41573587/what-is-the-difference-between-venv-pyvenv-pyenv-virtualenv-virtualenvwrappe).  If you don't have a preference, an arbitrary recommendation is [virtualenvwrapper](https://virtualenvwrapper.readthedocs.).
+1. Install Node.js
+1. Install JupyterLab and related packages: `pip install jupyterlab~=2.2.9 jupyterlab-git==0.24.0`
+1. Install the Git extension: `jupyter labextension install @jupyterlab/git`
+1. Install the nbdime extension: `nbdime extensions --enable`
+1. Run JupyterLab: `jupyter-lab`
 
 ## Forking this repo
 
