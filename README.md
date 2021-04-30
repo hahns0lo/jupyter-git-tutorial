@@ -4,9 +4,16 @@ The goal of this tutorial is to show how to use Git with Jupyter notebooks.  The
 
 This tutorial is inspired by the [Katacoda Git tutorial](https://katacoda.com/courses/git/) in that it follows the same basic flow of introducing Git commands but applied to Jupyter notebooks.  The actual notebook used here is from this [Google Colab notebook](https://colab.research.google.com/notebooks/mlcc/intro_to_pandas.ipynb) for teaching the pandas Python library.
 
-## Setting up Jupyter
+## Setting up JupyterLab
 
-This tutorial uses JupyterLab using Google Cloud Platform's [AI Platform Notebooks](https://cloud.google.com/ai-platform-notebooks).  The following instructions describe how to create a notebook instance.  More detailed instructions can be found [here](https://cloud.google.com/ai-platform/notebooks/docs/create-new).
+There are multiple run Jupyter notebooks.  This tutorial has been designed to work with two options:
+
+- Google Cloud Platform AI Platform Notebooks, which provides cloud instances of JupyterLab
+- Local installation of JuptyerLab
+
+## Google Cloud AI Platform Notebooks
+
+This section describes how to create a JupyterLab instance with GCP's [AI Platform Notebooks](https://cloud.google.com/ai-platform-notebooks), which automatically includes the Git extension.  More detailed instructions can be found [here](https://cloud.google.com/ai-platform/notebooks/docs/create-new).
 
 1. Open the [AI Platform Notebooks console](https://console.cloud.google.com/ai-platform/notebooks)
 1. Click `+NEW INSTANCE` and select "Python 3"
@@ -16,6 +23,17 @@ This tutorial uses JupyterLab using Google Cloud Platform's [AI Platform Noteboo
    1. Instance properties: use all defaults
    1. Click `CREATE`
 1. Click `OPEN JUPYTERLAB`
+
+## Local Installation
+
+This section describes how to install JupyterLab and the Git extension on your local machine.  This section assumes you already have Python installed.  Note that this section has only been tested on macOS, so far.
+
+1. (Optional, but recommended) Create a virtual environment.  There are [many options](https://stackoverflow.com/questions/41573587/what-is-the-difference-between-venv-pyvenv-pyenv-virtualenv-virtualenvwrappe).  If you don't have a preference, an arbitrary recommendation is [virtualenvwrapper](https://virtualenvwrapper.readthedocs.).
+1. Install Node.js
+1. Install JupyterLab and related packages: `pip install jupyterlab~=2.2.9 jupyterlab-git==0.24.0`
+1. Install the Git extension: `jupyter labextension install @jupyterlab/git`
+1. Install the nbdime extension: `nbdime extensions --enable`
+1. Run JupyterLab: `jupyter-lab`
 
 ## Forking this repo
 
