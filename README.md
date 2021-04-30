@@ -72,7 +72,7 @@ To allow you to push and pull commits without being prompted for a password, you
       1. Under Untracked, select `intro_to_pandas.ipynb` and click `+`
    1. Using the command line
       1. `git status`
-      1. `git add intro_to_pandas.ipynb`
+      1. `git add tutorial/intro_to_pandas.ipynb`
       1. `git status`
 1. Commit the notebook
    1. Using the Git extension
